@@ -360,6 +360,7 @@ textarea {
     color: transparent;
     padding: 7px;
     border-radius: 6px;
+    width: 97%;
 }
 
 .fg {
@@ -387,14 +388,15 @@ textarea {
 
 .fm {
     width: 100%;
-    height: 90vh;
+    height: 90%;
     background-color: transparent;
     color: #ffffff !important;
+  
 }
 
 .aq {
     width: 100%;
-    height: 90vh;
+    height: 100%;
     background-color: #ae3939;
     background: url(./image/Rectangle\ 20\ \(2\).png) no-repeat center;
     background-size: cover;
@@ -406,8 +408,8 @@ textarea {
 .a12 {
     justify-content: center;
     border-radius: 10px !important;
-    width: 60% !important;
-    height: 90vh;
+    width: 90% !important;
+    height: 100%;
     /* background-color: #000; */
     display: grid;
     grid-template-columns: 40% 60%;
@@ -416,18 +418,18 @@ textarea {
 }
 
 input {
-    width: 80%;
+    width:90%;
 }
 
 .huu {
     width: 100%;
-    height: auto;
+    height: 100%;
     background: url(./imgimg/Dark\ mountain.png) no-repeat center center ;
-    /* overflow: hidden !important; */
+    overflow: hidden !important;
     background-color: #000;
     background-size: cover;
     position: relative;
-    padding: 150px;
+    padding-top: 10% ;
     /* overflow: hidden; */
 }
 
@@ -441,7 +443,7 @@ input {
 
 .er {
     width: 100%;
-    height: 80vh;
+    height: 100%;
     background-color: #000000;
 }
 
@@ -462,7 +464,7 @@ input {
 
 .hy {
     width: 100%;
-    height: 90vh;
+    height: 100%;
     justify-content: center;
     text-align: center;
     padding: 20px;
