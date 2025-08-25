@@ -1,0 +1,504 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: 'Manrope', sans-serif;
+}
+
+.ab2 {
+    display: flex;
+    background-color: aqua;
+    margin-left: 50px !important;
+    margin-right: 50px !important;
+    padding: 10px;
+    height: 80vh;
+    gap: 10px !important;
+    border-radius: 10px;
+}
+
+.flx1 {
+    width: 40%;
+    background-color: #555;
+    overflow: hidden;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: stretch;
+    /* width: 100%; */
+    height: 100%;
+
+}
+
+.maina1 {
+    width: 100%;
+    height: auto;
+    background-color: transparent !important;
+    margin: 0;
+    padding-left: 5% !important;
+    padding-right: 5% !important;
+
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 200px;
+    gap: 15px;
+}
+
+.gallery .img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+ .gallery .big {
+            grid-row: span 2;
+        }
+        .img1 {
+            width: 202%;
+            height: 100%;
+            background-color: aqua;
+            object-fit: cover;
+            border-radius: 10px;
+            display: block;
+        }
+
+.flx1 img {
+    display: block;
+    object-fit: cover;
+}
+
+
+.flx {
+    width: 60%;
+    height: 38vh;
+    background-color: #0056b3;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+.hero-section {
+    background: url(./imgimg/Rectangle\ 3\ \(3\).png) no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.logo-img {
+    height: 100px !important;
+}
+
+.card-img-top {
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-img-top:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+
+}
+
+.nav-link {
+    color: #000;
+    font-weight: 500;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.after-hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.img2 {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 2;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    color: #fff;
+}
+
+
+.e-text {
+    font-family: 'BBagian', sans-serif;
+    font-size: 5rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+button:hover {
+    background-color: #ffd60a !important;
+}
+
+.nav-item .nav-link {
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+}
+
+.nav-item .nav-link:hover {
+    color: #ffd60a !important;
+}
+
+@font-face {
+    font-family: 'BBagian';
+    src: url('./font/b-bagianfont.ttf') format('truetype'),
+        url('./font/b-bagian-font.ttf/Bagian-rgdPO.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.section2 {
+    background: url(./image/CONTOUR\ LINES.svg) no-repeat;
+
+}
+
+.section2 h2 {
+    font-family: 'BBagian', sans-serif !important;
+    font-size: 40px;
+
+}
+
+.section2 h4 {
+    font-weight: 400;
+}
+
+.section2 img {
+    width: 100%;
+    height: 100%;
+    margin-top: -6%;
+}
+
+.section2 .g1 {
+    padding-left: 50px;
+}
+
+
+.t-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+
+}
+
+.t-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 25px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    background: transparent;
+    font-size: 16px;
+    font-weight: 400;
+    color: #222121;
+    transition: all 0.3s ease;
+
+}
+
+.custom-card {
+    border: none !important;
+    overflow: hidden;
+    background-color: #fff;
+    text-align: justify;
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+
+}
+
+.card-img-top {
+    height: 220px;
+    width: 100%;
+}
+
+.custom-card h5 {
+    font-size: 22PX;
+    font-weight: 400;
+
+}
+
+.icon-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0px;
+}
+
+.o1 {
+    background-color: #000000;
+    color: white;
+    font-weight: 600;
+    font-size: 17px !important;
+    width: 80px;
+    height: 30px;
+    border-radius: 8px;
+}
+
+.o2 {
+    width: 100px;
+    background-color: #000;
+
+}
+
+.g {
+    padding: 60px 0;
+    text-align: center;
+    background: #000;
+    color: #fff;
+}
+
+.g-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.g-subtitle {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    color: #ccc;
+}
+
+.gm {
+    padding: 0;
+    gap: 3;
+    margin: 0;
+    margin-top: 30px !important;
+
+}
+
+.gx {
+    width: 100%;
+}
+
+.gm2 {
+
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 50% 50%;
+}
+
+.gm3 {
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+    margin-top: 30px;
+    background: url(./image/Ocean.png);
+    transition: transform 0.3s ease;
+}
+
+.mg5 {
+    margin-left: 13px;
+    margin-top: -30px !important;
+    width: 90%;
+    height: 220px;
+    background: url(./image/Trecking.png) no-repeat;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.mg6 {
+    margin-left: 13px;
+    margin-top: -30px !important;
+    width: 90%;
+    height: 220px;
+    background: url(./image/Tent.png) no-repeat;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.mg5:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.mg6:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+
+
+}
+
+input,
+textarea {
+    background: transparent;
+    border: 1px solid #ffffff;
+    color: transparent;
+    padding: 7px;
+    border-radius: 6px;
+}
+
+.fg {
+    width: 100%;
+    height: 150px;
+    /* background-color: #000; */
+    color: #060606;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.gf1 {
+    width: 100%;
+    height: 150px;
+    color: #fff;
+    /* background-color: #555; */
+}
+
+.gf2 {
+    width: 100%;
+    height: 150px;
+    color: #fff;
+    /* background-color: chocolate; */
+}
+
+.fm {
+    width: 100%;
+    height: 90vh;
+    background-color: transparent;
+    color: #ffffff !important;
+}
+
+.aq {
+    width: 100%;
+    height: 90vh;
+    background-color: #ae3939;
+    background: url(./image/Rectangle\ 20\ \(2\).png) no-repeat center;
+    background-size: cover;
+    margin-left: -13px !important;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.a12 {
+    justify-content: center;
+    border-radius: 10px !important;
+    width: 60% !important;
+    height: 90vh;
+    /* background-color: #000; */
+    display: grid;
+    grid-template-columns: 40% 60%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+
+}
+
+input {
+    width: 80%;
+}
+
+.huu {
+    width: 100%;
+    height: auto;
+    background: url(./imgimg/Dark\ mountain.png) no-repeat center center ;
+    /* overflow: hidden !important; */
+    background-color: #000;
+    background-size: cover;
+    position: relative;
+    padding: 150px;
+    /* overflow: hidden; */
+}
+
+.g img .gm3 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.er {
+    width: 100%;
+    height: 80vh;
+    background-color: #000000;
+}
+
+.g img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.gm3:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.g .btn {
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+.hy {
+    width: 100%;
+    height: 90vh;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+
+}
+
+.accordion-header {
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.r1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.e1 {
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+
+
+.t-btn img,
+.t-btn svg {
+    width: 50px !important;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+
+.t-btn:hover {
+    border-color: #ff9900;
+    color: #ff9900;
+    background: transparent !important;
+}
+

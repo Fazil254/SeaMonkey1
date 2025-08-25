@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <style>
+        .er {
+    width: 100%;
+    height: 80vh;
+    background-color: #000000;
+}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            overflow-x: hidden;
+            font-family: 'Manrope', sans-serif;
+        }
+
+        .hero-section {
+            background: url(./imgimg/Goat.png) no-repeat center center;
+            background-size: cover;
+            height: 100vh;
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .img2 {
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 100%;
+            height: auto;
+            z-index: 2;
+        }
+
+        @font-face {
+            font-family: 'BBagian';
+            src: url('./font/b-bagianfont.ttf') format('truetype'),
+                url('./font/b-bagian-font.ttf/Bagian-rgdPO.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        .nav-item .nav-link {
+            color: rgb(255, 255, 255);
+            font-weight: 500;
+        }
+
+        .nav-item .nav-link:hover {
+            color: #ffd60a !important;
+        }
+
+        .e-text {
+            font-family: 'BBagian', sans-serif;
+            font-size: 5rem;
+            font-weight: 600;
+            letter-spacing: 3px;
+        }
+
+        .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            width: 100%;
+            color: #fff;
+        }
+
+        .e-text1 {
+            font-family: 'BBagian', sans-serif;
+            font-size: 3rem;
+            font-weight: 500;
+            letter-spacing: 2px;
+        }
+
+        .marsh {
+            margin: 0;
+            padding-left: 5%;
+            padding-right: 5%;
+            height: 100 auto;
+
+        }
+        button:hover {
+    background-color: #ffd60a !important;
+}
+.huu {
+    width: 100%;
+    height: auto;
+    background: url(./imgimg/Dark\ mountain.png) no-repeat center center ;
+    /* overflow: hidden !important; */
+    background-color: #000;
+    background-size: cover;
+    position: relative;
+    padding: 150px;
+    /* overflow: hidden; */
+}
+
+.fg {
+    width: 100%;
+    height: 150px;
+    /* background-color: #000; */
+    color: #060606;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.gf1 {
+    width: 100%;
+    height: 150px;
+    color: #fff;
+    /* background-color: #555; */
+}
+
+.gf2 {
+    width: 100%;
+    height: 150px;
+    color: #fff;
+    /* background-color: chocolate; */
+}
+
+.aq {
+    width: 100%;
+    height: 90vh;
+    background-color: #ae3939;
+    background: url(./image/Rectangle\ 20\ \(2\).png) no-repeat center;
+    background-size: cover;
+    margin-left: -13px !important;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.a12 {
+    justify-content: center;
+    border-radius: 10px !important;
+    width: 60% !important;
+    height: 90vh;
+    /* background-color: #000; */
+    display: grid;
+    grid-template-columns: 40% 60%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+
+}.fm {
+    width: 100%;
+    height: 90vh;
+    background-color: transparent;
+    color: #ffffff !important;
+}
+input,
+textarea {
+    background: transparent;
+    border: 1px solid #ffffff;
+    color: transparent;
+    padding: 7px;
+    border-radius: 6px;
+}
+
+        
+.nav-item .nav-link:hover {
+    color: #ffd60a !important;
+}
+.marvel{
+    width: 100%;
+    height: 50px;
+    /* background-color: #ffd60a; */
+    justify-content: center !important;
+    text-align: center !important;
+    display: flex;
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="hero-section container-fluid">
+        <nav class="navbar navbar-expand-lg d-flex justify-content-between align-items-center px-4 pt-3">
+            <a class="nav-logo" href="#">
+                <img src="./image/logo.svg" alt="Logo" class="logo-img">
+            </a>
+            <div class="d-none d-lg-block">
+                <ul class="navbar-nav d-flex flex-row gap-3">
+                    <li class="nav-item"><a class="nav-link" href="index.html">EXPEDITIONS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Gallery.html">GALLERY</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#FAQ.HTML">FAQ</a></li>
+                </ul>
+            </div>
+            <div>
+                <a href="#" class="nav-link">
+                    <button type="button" class="btn btn-primary px-4 py-2 d-flex align-items-center gap-2">
+                        <span>CONTACT</span>
+                        <img src="./image/Group 1.svg" class="fa-solid  fa-arrow-right" alt="">
+                    </button>
+                </a>
+
+            </div>
+        </nav>
+        <div class="hero-text text-center">
+            <h1 class="e-text">FAQ</h1>
+        </div>
+        <img src="./image/Group 43.png" alt="" class="img2">
+    </div>
+    <div class="second text-center">
+        <br><br>
+        <h2 class="e-text1"> Frequently Asked Questions</h2>
+        <br>
+        <div class=" marsh">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            <h3>Is spotting wildlife guaranteed?</h3>
+
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body"><br></div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            <h3>What wildlife are we expected to see in Jordan?</h3>
+
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Jordan is home to vast wildlife, the country is a very important
+                            migratory route for many bird species, the red sea is home to over 500 species of fish.
+                            Apart from the vast Jordanian wilderness, at a Seamonkey adventure, we try to maximize your
+                            chances of also spotting Arabian oryx, water buffalo, raptors, sea turtles, rock hyrax,
+                            desert foxes & Nubian ibex. There are animals that very few people have recorded in Jordan
+                            that are extremely difficult to find because of their very shy and skittish nature such as
+                            striped hyenas, sand cats, Eurasian badgers and whale sharks. With some great luck you could
+                            be some of the very few people that were able to spot them!</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                          <h3>When is the best time to visit Jordan to look for wildlife?</h3>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body"><br></div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                          <h3>Why book with us?</h3>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body"><br></div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                          <h3>What shall I wear on a seamonkey adventure?</h3>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body"><br></div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                          <h3>Can I bring pets?</h3>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body"><br></div>
+                    </div>
+                </div>
+            </div>
+             
+        </div>
+       <DIV class="marvel"> 
+ <button type="button" class="btn btn-primary px-4 py-2 d-flex align-items-center gap-2">
+                        <span>CONTACT</span>
+                        <img src="./image/Group 1.svg" class="fa-solid  fa-arrow-right" alt="">
+                    </button>
+
+       </DIV>
+        <br><br><br>
+        <div class="huu container-fluid ">
+            <div class="a12 container">
+                <div class=" container-fluid aq">
+                    <!-- <img src="./image/Rectangle 20 (2).png" alt="" style="width: 100%; height: 400px;"> -->
+                </div>
+                <div class="fm ">
+                    <form action=" ">
+                        <h2 class="text-center py-4">Lets Get connected</h2>
+                        <div class="fg">
+                            <div class="gf1"><label for="name">FirstName</label><br>
+                                <input type="text">
+                                <br>
+                                <br><label for="name">Email</label><br>
+                                <input type="text">
+                            </div>
+                            <div class="gf2"> <label for="name">LastName</label><br>
+                                <input type="text"><br><br> <label for="name">Phone</label><br>
+                                <input type="text">
+                            </div><br><br>
+
+                        </div>
+                        <label for="name">Message</label>
+                        <textarea name="message" id="" cols="10" rows="5" style="width: 95%;"></textarea>
+                        <br><br>
+                        <button type="button" class="btn btn-primary px-4 py-2 d-flex align-items-center gap-2 mx-auto">
+                            <span>submit
+
+                            </span>
+
+                            <img src="./image/Group 1.svg" alt="" style="width: 20px; height: 20px; margin-top: 2.7px;">
+                        </button>
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="er text-center">
+            <br><br><br><br>
+            <img src="./image/logo.svg" alt=""
+                style=" width: 100px; height: 100px; margin-top: 30px; justify-content: center;">
+            <br><br>
+            <div class="d-none d-lg-block ">
+                <ul class="navbar-nav d-flex flex-row gap-3 justify-content-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">EXPEDITIONS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Gallery.html">GALLERY</a></li>
+                    <li class="nav-item"><a class="nav-link" href="FAQ.HTML">FAQ</a></li>
+                </ul>
+                <br>
+                <ul class="navbar-nav d-flex flex-row gap-3 justify-content-center">
+                    <li class="nav-item"><img src="./image/facebook.svg" alt=""></li>
+                    <li class="nav-item"><img src="./image/basil_instagram-solid.svg" alt=""></li>
+                    <li class="nav-item"><img src="./image/twitter.svg" alt=""></li>
+                    <li class="nav-item"><img src="./image/uim_whatsapp.svg" alt=""></li>
+                </ul>
+            </div>
+            <br><br>
+            <hr style="color: white; border: solid white ">
+            <br>
+            <div>
+
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
